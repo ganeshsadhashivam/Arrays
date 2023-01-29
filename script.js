@@ -55,3 +55,71 @@ document.querySelector("#push p").innerText = pusharray;
 //});
 
 // p.appendChild(push);
+
+//pop method;
+var div = document.createElement("div");
+var h1 = document.createElement("h1");
+div.setAttribute("class", "wrapper");
+div.setAttribute("id", "pop");
+document.body.appendChild(div);
+h1.innerText = "pop( ) Method";
+div.appendChild(h1);
+var h2 = document.createElement("h4");
+h2.innerText =
+  "pop() method remove elements from the last position of an Array.";
+var p = document.createElement("p");
+div.append(h2);
+div.appendChild(p);
+
+let poparray = arrayElements;
+
+console.log(poparray);
+poparray.pop();
+console.log(poparray);
+document.querySelector("#pop p").innerText = poparray;
+
+//shift method
+
+var div = document.createElement("div");
+var h1 = document.createElement("h1");
+div.setAttribute("class", "wrapper");
+div.setAttribute("id", "shift");
+document.body.appendChild(div);
+h1.innerText = "shift( ) Method";
+div.appendChild(h1);
+var h2 = document.createElement("h4");
+h2.innerText =
+  "shift() method remove elements from the First position of an Array.";
+var p = document.createElement("p");
+div.append(h2);
+div.appendChild(p);
+
+let shiftarray = arrayElements;
+
+console.log(shiftarray);
+shiftarray.shift();
+console.log(shiftarray);
+document.querySelector("#shift p").innerText = shiftarray;
+
+//unshift method
+
+var div = document.createElement("div");
+var h1 = document.createElement("h1");
+div.setAttribute("class", "wrapper");
+div.setAttribute("id", "unshift");
+document.body.appendChild(div);
+h1.innerText = "unshift( ) Method";
+div.appendChild(h1);
+var h2 = document.createElement("h4");
+h2.innerText =
+  "unshift() method Adds elements to the First position of an Array.";
+var p = document.createElement("p");
+div.append(h2);
+div.appendChild(p);
+
+let unshiftarray = arrayElements;
+
+console.log(unshiftarray);
+unshiftarray.unshift(99);
+console.log(unshiftarray);
+document.querySelector("#unshift p").innerText = unshiftarray;
